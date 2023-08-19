@@ -1,0 +1,139 @@
+.houselineIcon {
+  position: relative;
+  width: 44px;
+  height: 44px;
+}
+.realState,
+.reis {
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
+}
+.realState {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+.logo,
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.logo {
+  text-decoration: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: inherit;
+}
+.home {
+  font-weight: 600;
+}
+.aboutUs,
+.home,
+.properties {
+  text-decoration: none;
+  position: relative;
+  line-height: 22px;
+  color: inherit;
+}
+.properties {
+  cursor: pointer;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.hamburgerMenuIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.hamburger {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navigationRight {
+  justify-content: flex-end;
+  gap: 36px;
+  font-size: 14px;
+  color: #0f1320;
+}
+.navigationRight,
+.topContainer,
+.topHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.topContainer {
+  flex: 1;
+  justify-content: space-between;
+}
+.topHeader {
+  align-self: stretch;
+  background-color: #fff;
+  height: 98px;
+  padding: 22px 80px;
+  box-sizing: border-box;
+  justify-content: center;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  z-index: 2;
+  text-align: center;
+  font-size: 24px;
+  color: #4a60a1;
+  font-family: Inter;
+}
+@media screen and (max-width: 1200px) {
+  .navigation {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+  .topHeader {
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 960px) {
+  .navigation {
+    display: none;
+  }
+  .hamburger,
+  .hamburgerMenuIcon {
+    display: flex;
+  }
+  .topHeader {
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .navigation {
+    display: none;
+  }
+  .hamburger,
+  .navigationRight {
+    display: flex;
+  }
+}

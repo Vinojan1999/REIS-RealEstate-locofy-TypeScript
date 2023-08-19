@@ -1,0 +1,89 @@
+.propertiesByArea {
+  align-self: stretch;
+  position: relative;
+  line-height: 48px;
+  font-weight: 600;
+}
+.vestibulumAnteIpsum {
+  align-self: stretch;
+  position: relative;
+  font-size: 20px;
+  line-height: 28px;
+  color: #889099;
+}
+.description,
+.row1,
+.row2 {
+  align-self: stretch;
+  display: flex;
+}
+.description {
+  flex-direction: column;
+  padding: 0 30px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.row1,
+.row2 {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 26px;
+}
+.row2 {
+  gap: 24px;
+}
+.cardwrapper {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  max-width: 1300px;
+}
+.cards,
+.cardwrapper,
+.propertiesByAreaImagesSect {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+}
+.cards {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 95%px;
+  text-align: left;
+  font-size: 24px;
+  color: #fff;
+}
+.propertiesByAreaImagesSect {
+  flex-direction: column;
+  padding: 53px 50px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 45px;
+  text-align: center;
+  font-size: 40px;
+  color: #1e2640;
+  font-family: Inter;
+}
+@media screen and (max-width: 1200px) {
+  .row1,
+  .row2 {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 960px) {
+  .description {
+    align-self: stretch;
+    width: auto;
+  }
+  .row1,
+  .row2 {
+    flex-direction: column;
+  }
+}
